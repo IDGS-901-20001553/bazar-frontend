@@ -1,6 +1,6 @@
 
 
-/* Fondo general */
+
 .app-fondo {
   min-height: 100vh;
   background: url('../public/images/fondoHoroscopo.png') no-repeat center center fixed;
@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-/* Cards místicas con constelaciones y glow dorado */
+
 .card {
   background: radial-gradient(circle at top left, #1e1e2f, #3b3b5c) !important;
   border-radius: 20px !important;
@@ -24,13 +24,12 @@
   transition: transform 0.3s, box-shadow 0.5s;
 }
 
-/* Hover efecto místico dorado */
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 0 30px rgba(255, 215, 0, 1), 0 0 50px rgba(255, 255, 200, 0.3) !important;
 }
 
-/* Partículas/estrellas doradas en movimiento */
+
 .card::before {
   content: '';
   position: absolute;
@@ -59,7 +58,7 @@
   pointer-events: none;
 }
 
-/* Animaciones de constelaciones */
+
 @keyframes rotateStars {
   0% { transform: rotate(0deg) translate(0,0); }
   100% { transform: rotate(360deg) translate(0,0); }
@@ -70,17 +69,17 @@
   100% { transform: rotate(0deg) translate(0,0); }
 }
 
-/* Imágenes con brillo dorado */
+
 .card img {
   filter: drop-shadow(0 0 8px #ffd700);
 }
 
-/* Tipografía mística */
+
 .card h3, .card h4, .card h5 {
   font-family: 'Cursive', sans-serif;
 }
 
-/* Texto */
+
 .card p {
   color: #fff7d1 !important;
 }
