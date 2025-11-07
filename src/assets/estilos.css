@@ -1,0 +1,89 @@
+
+/* Tipografía general */
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background-color: #d0b69a;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+}
+
+/* Cards con sombra y transición */
+.card {
+    border-radius: 16px !important;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Botones */
+.btn-dark {
+    background-color: #3a2d1e !important;
+    border-color: #3a2d1e !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-dark:hover {
+    background-color: #2b2015 !important;
+    border-color: #2b2015 !important;
+}
+
+/* Barra de navegación superior (en resultados) */
+.navbar-brand span {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Fondo principal */
+html, body, #root {
+    min-height: 100vh;
+}
+
+/* Centrar títulos importantes */
+h3.fw-bold, h4.fw-bold {
+    color: #1f1f1f;
+    text-align: center;
+}
+
+/* Ajustes para la pantalla de Compras */
+button.btn-salir {
+    margin-top: 40px;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+/* Efecto de entrada suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card, .btn, .alert {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Pequeño brillo al pasar el mouse por imágenes */
+.card img:hover {
+    filter: brightness(1.05);
+    transition: filter 0.3s ease;
+}
+
+/* Ajustes en la caja de búsqueda */
+input.form-control {
+    border-radius: 12px !important;
+}
